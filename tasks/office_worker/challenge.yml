@@ -1,0 +1,32 @@
+name: Office worker
+author: "@IAJlekcaHDpI"
+description: |
+  `@IAJlekcaHDpI`
+
+  Кот Кафиф взломал Instagram аккаунт офисного работника и спрятал там флаг. (@office_worker_2024)
+  
+
+category: osint
+value: 100
+type: dynamic
+
+extra:
+    initial: 100
+    decay: 10
+    minimum: 10
+
+# Флаги. Их может быть очень много, но обычно делают один
+flags:
+  - {
+    type: "static",
+    content: "vrnctf{y0u_r34lly_7ru3_051n73r}",
+    data: "case_insensitive",
+  }
+
+# Публичны, видят участники. Можно вешать теги на задачи
+tags:
+  - osint
+
+state: visible
+# Версия вашей задачи
+version: "0.1"

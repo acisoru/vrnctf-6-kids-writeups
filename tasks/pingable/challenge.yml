@@ -1,0 +1,31 @@
+name: P1ng-p0ng
+author: "@m41den"
+description: |
+  `@m41den`
+  
+  Пожалуйста, покиньте сайт. Вы не являетесь авторизованным персоналом.
+category: web
+value: 100
+type: dynamic
+
+extra: # сами посчитайте
+  initial: 100
+  decay: 10
+  minimum: 10
+
+connection_info: kafiflab.tasks.ctf.vrnctf.ru
+
+# Флаги. Их может быть очень много, но обычно делают один
+flags:
+  - {
+    type: "static",
+    content: "vrnctf{P1NG_P0NG_C0NCATENATION_W0N}",
+    data: "case_insensitive",
+  }
+
+# Публичны, видят участники. Можно вешать теги на задачи
+tags:
+  - web
+state: visible
+# Версия вашей задачи
+version: "1.0"

@@ -1,0 +1,30 @@
+name: Locked screen
+author: "@p1an"
+description: |
+  `@p1an`
+
+  Фиф забыл пароль от своего компьютера, но на рабочем столе лежит очень важный файл. Что же делать?
+
+category: forensic
+value: 100
+type: dynamic
+extra:
+  initial: 100
+  decay: 10
+  minimum: 10
+
+flags:
+  - {
+    type: "static",
+    content: "vrnctf{Tru3_H4cK3rs_0f_wiNd0wS}",
+    data: "case_insensitive"
+    }
+
+files:
+  - public/lockedscreen.txt
+
+tags:
+  - forensic
+
+state: visible
+version: "0.1"

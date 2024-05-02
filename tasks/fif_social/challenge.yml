@@ -1,0 +1,30 @@
+name: The secret conspiracy
+author: "@alexereh"
+description: |
+  `@alexereh`
+
+  Ишак фиф неожиданно начал чуять, что за его спиной в новой соцсети начали строить заговор. 
+  Сможете разобраться и найти виновного?
+category: misc
+value: 100
+type: dynamic
+extra:
+  initial: 100
+  decay: 10
+  minimum: 10
+
+flags:
+  - {
+    type: "static",
+    content: "vrnctf{0h_my_w1dg3t5}"
+    }
+
+files:
+  - public/fif.apk
+
+tags:
+  - android
+  - bypass
+
+state: visible
+version: "0.1"

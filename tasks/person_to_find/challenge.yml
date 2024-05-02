@@ -1,0 +1,30 @@
+name: Person to find
+author: "@p1an"
+description: |
+  `@p1an`
+
+  Фиф встретил странную персону и не успел взять контакты, все что у него есть это фото сделанное на его телефон. Помогите ему найти эту персону и узнать что она сделала в 2002 году. Название организации которую он взломал обернуть в vrnctf{}, пробелы заменить на _.
+
+category: osint
+value: 100
+type: dynamic
+extra:
+  initial: 100
+  decay: 10
+  minimum: 10
+
+flags:
+  - {
+    type: "static",
+    content: "vrnctf{New_York_Times}",
+    data: "case_insensitive"
+    }
+
+files:
+  - public/personToFind.jpg
+
+tags:
+  - osint
+
+state: visible
+version: "0.1"

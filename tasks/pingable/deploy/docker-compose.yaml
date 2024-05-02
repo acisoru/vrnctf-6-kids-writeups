@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  web3:
+    build: .
+    ports:
+      - "84:5000" # changeme
+    restart: always
+
+    deploy:
+      resources:
+        limits:
+          memory: 256m  # bash allocates some memory (~5mb), so...
+        reservations:
+          memory: 128m

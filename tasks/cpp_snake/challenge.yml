@@ -1,0 +1,45 @@
+# Обязательные поля
+# Имя задачи на CTFd
+name: Fif forgot about his pet again
+# Никнейм в Telegram
+author: "@pipline_sh"
+# Описание таска на платформе.
+description: | 
+  `@pipline_sh`
+
+  Кафиф опять пошел гулять в город, снова забыв покормить своего питомца. На этот раз, Вася не стерпел такой наглости и стал ооочень злым. Теперь любая ошибка с вашей стороны будет фатальна для вас...
+
+category: reverse
+# Оставляем как есть - цена таски
+value: 100
+# Не трогаем - тип соревнования
+type: dynamic
+
+extra:
+    # Стартовая цена
+    initial: 100
+    # Сколько команд должны решить, чтобы цена упала до минимума
+    decay: 10
+    # Минимальная цена
+    minimum: 10
+
+# Флаги. Их может быть очень много, но обычно делают один
+flags:
+  - {
+    type: "static",
+    content: "vrnctf{l0l_it_is_snak3_gam3_t00}",
+    data: "case_insensitive",
+  }
+
+
+files:
+   - public/task.zip
+
+requirements:
+     - "Fif forgot about his pet"
+
+
+# Отображение на платформе. visible/hidden
+state: visible
+# Версия вашей задачи
+version: "0.1"

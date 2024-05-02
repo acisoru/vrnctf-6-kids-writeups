@@ -1,0 +1,45 @@
+name: The keys to the Fif's house
+# Никнейм в Telegram
+author: "@pipline_sh"
+# Описание таска на платформе.
+description: | 
+  `@pipline_sh`
+
+  Однажды Кафиф решил посетить свою секретную лабораторию по производству хлеба из мух. Но вот незадача! Похоже он потерял карточку доступа.
+  Поможешь восстановить доступ к лаборатории? 
+# Одна из следующих категорий: web, reverse, pwn, osint, joy, forensic, stegano, crypto
+category: reverse
+# Оставляем как есть - цена таски
+value: 100
+# Не трогаем - тип соревнования
+type: dynamic
+
+extra:
+    # Стартовая цена
+    initial: 100
+    # Сколько команд должны решить, чтобы цена упала до минимума
+    decay: 10
+    # Минимальная цена
+    minimum: 10
+
+# Опциональные настройки, включайте по мере необходимости
+# Коннект к удаленной машине, может быть nc или URL к сайту
+connection_info: https://fiflab.tasks.ctf.vrnctf.ru
+
+# Флаги. Их может быть очень много, но обычно делают один
+flags:
+  - {
+    type: "static",
+    content: "vrnctf{p3rs3v3raNc3_k3y_t0_d1sc0v3ry}",
+    data: "case_insensitive",
+  }
+
+
+# Секция с файликами, которые отдаются участниками. Относительный путь от папки public
+files:
+   - public/task.zip
+
+# Отображение на платформе. visible/hidden
+state: visible
+# Версия вашей задачи
+version: "0.1"

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pingables</title>
+</head>
+<body style="margin:0;font-family: sans-serif">
+<p style="background-color: #bfbfbf;margin:0;padding:1rem">
+    Kafif Labs | Внутренние утилиты - только для авторизованного персонала
+</p>
+<div style="padding:1rem 2rem;border-radius:12px;background-color: #090912;margin:2rem">
+    <form action="/" method="get">
+        <p style="color:white; display: flex;align-items: center;gap: 1rem">
+            <span style="white-space: nowrap">ping -c 4</span>
+            <input type="text" name="ip" placeholder="127.0.0.1" style="width: 100%;padding:0.5rem;border-radius:12px;border: 1px solid #bfbfbf" />
+            <input type="submit" value="Ping" style="background-color: #bfbfbf; padding: .5rem 1rem;border-radius: 8px" />
+        </p>
+    </form>
+    <pre style="color:#cacad0">
+        {{output}}
+    </pre>
+</div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+# Манифест развертывания задачи на CTFd
+# Полный пример можно посмотреть в документации -- https://github.com/CTFd/ctfcli/blob/master/ctfcli/spec/challenge-example.yml
+# Необязательные, но нужные вам секции можно раскомментировать 
+
+# Обязательные поля
+# Имя задачи на CTFd
+name: Strange Picture
+# Никнейм в Telegram
+author: "@lumen_02"
+# Описание таска на платформе.
+description: | 
+  `@lumen_02`
+
+  Неизвестный художник написал портрет Кафифа. Если долго всматриваться, картина выглядит довольно жутко. Его автор явно что-то скрывает..
+# Одна из следующих категорий: web, reverse, pwn, osint, joy, forensic, stegano, crypto
+category: stegano
+# Оставляем как есть - цена таски
+value: 100
+# Не трогаем - тип соревнования
+type: dynamic
+
+extra:
+    # Стартовая цена
+    initial: 100
+    # Сколько команд должны решить, чтобы цена упала до минимума
+    decay: 10
+    # Минимальная цена
+    minimum: 10
+
+# Опциональные настройки, включайте по мере необходимости
+# Коннект к удаленной машине, может быть nc или URL к сайту
+# connection_info: nc hostname 12345
+
+# Флаги. Их может быть очень много, но обычно делают один
+flags:
+  - {
+    type: "static",
+    content: "vrnCTF{pr0duCed_by_Kaf1f}",
+    data: "case_insensitive",
+  }
+
+# Примечания для админов, не видны участникам
+# Разрешены строки
+
+# topics:
+#   - information disclosure
+#   - buffer overflow
+#   - memory forensics
+
+# Публичны, видят участники. Можно вешать теги на задачи
+# tags:
+#   - web
+#   - sandbox
+#   - js
+
+# Секция с файликами, которые отдаются участниками. Относительный путь от папки public
+files:
+  - public/picture.rar
+
+# Отображение на платформе. visible/hidden
+state: visible
+# Версия вашей задачи
+version: "0.1"

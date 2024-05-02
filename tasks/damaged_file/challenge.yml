@@ -1,0 +1,30 @@
+name: Damaged file 
+author: "@p1an"
+description: |
+  `@p1an`
+
+  В очередной раз сидя за компьютером Фиф наткнулся на интересный файл. Что это?
+
+category: misc
+value: 100
+type: dynamic
+extra:
+  initial: 100
+  decay: 10
+  minimum: 10
+
+flags:
+  - {
+    type: "static",
+    content: "vrnctf{0ld_bUt_g0ld_cyPher}",
+    data: "case_insensitive"
+    }
+
+files:
+  - public/damagedFile
+
+tags:
+  - misc
+
+state: visible
+version: "0.1"

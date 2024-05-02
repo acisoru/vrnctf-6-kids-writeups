@@ -1,0 +1,31 @@
+name: Ишakep
+author: "@m41den"
+description: |
+  `@m41den`
+  
+  Ведущий интернет-журнал в области технологий. Жаль, что у вас нет подписки... но вы же не будете красть все выпуски?
+category: web
+value: 100
+type: dynamic
+
+extra: # сами посчитайте
+  initial: 100
+  decay: 10
+  minimum: 10
+
+connection_info: https://ishaker.tasks.ctf.vrnctf.ru
+
+# Флаги. Их может быть очень много, но обычно делают один
+flags:
+  - {
+    type: "static",
+    content: "vrnctf{F1F_S3RUM_INJ3CTI0N}",
+    data: "case_insensitive",
+  }
+
+# Публичны, видят участники. Можно вешать теги на задачи
+tags:
+  - web
+state: visible
+# Версия вашей задачи
+version: "1.0"

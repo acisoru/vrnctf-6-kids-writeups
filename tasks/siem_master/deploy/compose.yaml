@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  splunk:
+    image: splunk/splunk:latest
+    ports:
+      - "87:8000"
+    environment:
+      - SPLUNK_START_ARGS=--accept-license
+      - SPLUNK_PASSWORD=very_hard_password

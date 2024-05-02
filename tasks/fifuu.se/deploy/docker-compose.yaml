@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  web1:
+    build: .
+    ports:
+      - "82:80" # changeme
+    restart: always
+
+    deploy:
+      resources:
+        limits:
+          memory: 256m  # some headroom in case someone wants to fuzz this
+        reservations:
+          memory: 128m

@@ -1,0 +1,31 @@
+name: Sheltered
+author: "@m41den"
+description: | 
+  `@m41den`
+  
+  Какой милый сайт для приюта! На такой простой страничке же невозможно оставить уязвимость, верно?
+category: web
+value: 100
+type: dynamic
+
+extra: # сами посчитайте
+    initial: 100
+    decay: 10
+    minimum: 10
+
+connection_info: https://fifsocial.tasks.ctf.vrnctf.ru
+
+# Флаги. Их может быть очень много, но обычно делают один
+flags:
+  - {
+    type: "static",
+    content: "vrnctf{F1lt3r1ng_D0n3_wr0ng}",
+    data: "case_insensitive",
+  }
+
+# Публичны, видят участники. Можно вешать теги на задачи
+tags:
+  - web
+state: visible
+# Версия вашей задачи
+version: "1.0"

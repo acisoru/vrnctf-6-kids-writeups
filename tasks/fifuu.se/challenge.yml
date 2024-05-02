@@ -1,0 +1,32 @@
+name: Fifuu.se
+author: "@m41den"
+description: |
+  `@m41den`
+  
+  В рамках проекта "Об импортозамещении файлообменников" мы укра... взяли один из самых популярных вариантов
+  с открытым исходным кодом. Ctrl+C, Ctrl+V и ноль креативности - наш залог безопасности. Сможете доказать обратное?
+category: web
+value: 100
+type: dynamic
+
+extra: # сами посчитайте
+  initial: 100
+  decay: 10
+  minimum: 10
+
+connection_info: https://fifuu.tasks.ctf.vrnctf.ru
+
+# Флаги. Их может быть очень много, но обычно делают один
+flags:
+  - {
+    type: "static",
+    content: "vrnctf{BL4CKLIST_1SSUE_I_GUESS}",
+    data: "case_insensitive",
+  }
+
+# Публичны, видят участники. Можно вешать теги на задачи
+tags:
+  - web
+state: visible
+# Версия вашей задачи
+version: "1.0"

@@ -1,0 +1,26 @@
+# docker compose build from local
+version: '3.7'
+services:
+    web2:
+        build: .
+        ports:
+            - "83:3000"
+        depends_on:
+            - mariadb
+        restart: always
+        deploy:
+            resources:
+                limits:
+                    memory: 512m  # NODE.JS ATE 20+ GIGS OF RAM LAST TIME I WAS DDOSED
+                reservations:
+                    memory: 256m
+    mariadb:
+        image: mariadb:10
+        ports:
+            - "3306:3306"
+        environment:
+            - MYSQL_ROOT_PASSWORD=sussykafifi0n
+            - MYSQL_USER=fif
+            - MYSQL_PASSWORD=sussykafifi0n
+            - MYSQL_DATABASE=fifdb
+        restart: always

@@ -1,0 +1,3 @@
+User-Agent: *
+Disallow: /
+Disallow: dirbuster? More like "door busted"!

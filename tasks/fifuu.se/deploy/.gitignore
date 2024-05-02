@@ -1,0 +1,15 @@
+.DS_Store
+node_modules
+dist
+build
+vendor
+package-lock.json
+uguu.sq3
+.idea
+.phpdoc
+.vscode
+composer.phar
+composer.lock
+docker/uguuForDocker.tar.gz
+!/.php-cs-fixer.cache
+test.php
